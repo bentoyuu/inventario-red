@@ -1,0 +1,18 @@
+# Configuracion del proyecto (formato YAML - Modulo 3, seccion 3.6, diapositivas 77-81)
+# Las credenciales NO van aqui: estan en credenciales.yaml (excluido de Git, chmod 600)
+
+api:
+  # DevNet Always-On Sandbox (Lab 2.2.7, Parte 2, Paso 3; Modulo 2, diapositiva 8)
+  url_base: "https://sandboxdnac.cisco.com"
+  ruta_token: "/dna/system/api/v1/auth/token"            # POST + autenticacion basica
+  ruta_dispositivos: "/dna/intent/api/v1/network-device"  # GET inventario de dispositivos
+  tiempo_espera: 15
+  # El certificado del sandbox no es valido para su nombre de dominio.
+  # Modulo 4, diapositiva 55: en un entorno de laboratorio se puede desactivar
+  # la verificacion de certificados. En produccion debe ser true.
+  verificar_ssl: false
+
+archivos:
+  credenciales: "credenciales.yaml"
+  inventario_local: "equipos_locales.csv"
+  carpeta_salida: "salida"

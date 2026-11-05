@@ -1,0 +1,4 @@
+# Copiar como credenciales.yaml y proteger con: chmod 600 credenciales.yaml
+# Credenciales publicas del DevNet Always-On Sandbox de Catalyst Center
+usuario: "devnetuser"
+clave: "Cisco123!"
