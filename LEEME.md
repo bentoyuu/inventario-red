@@ -1,4 +1,4 @@
-# Inventario de red automatizado - Bloque 1
+# Inventario de red automatizado - Equipo de Administracion de Red
 
 Script en Python que consulta el inventario de dispositivos de **Cisco Catalyst Center**
 mediante una **API REST sobre HTTPS**, lo combina con un inventario local (CSV) y genera
